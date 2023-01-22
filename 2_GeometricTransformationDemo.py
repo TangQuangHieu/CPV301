@@ -1,4 +1,6 @@
 import numpy as np
+
+#import opencv into pycharm
 import cv2 as cv
 
 def scaleImage(img, scaleFactor, bShow=False):
@@ -197,7 +199,7 @@ def perspectiveImageDemo():
     img = cv.imread('sudoku.jpg')
     cv.imshow("before perspective", img)
     pts1 = np.float32([[56, 65], [368, 52], [28, 387], [389, 390]])
-    pts2 = np.float32([[0, 0], [300, 0], [0, 300], [300, 300]])
+    pts2 = np.float32([[0, 0], [300, 0], [0, 300], [450, 300]])
     perspectiveImage(img, pts1, pts2, True)
     cv.destroyAllWindows()
 
