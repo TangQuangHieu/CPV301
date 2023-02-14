@@ -172,4 +172,10 @@ def main():
     #addSinunoidNoise_Demo()
     imageReconstructionDemo()
 
-main()
+#main()
+l = [1,2,3,4,5]
+import random
+for i in range(100):
+    random.shuffle(l)
+
+print(l)
