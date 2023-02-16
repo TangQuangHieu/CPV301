@@ -246,7 +246,7 @@ def hog_human_face_detection_dlib():
         cv.imshow("video", frame)
         cv.waitKey(10)
 def main():
-    #sift_detector_demo()
+    sift_detector_demo()
     #harris_detector_demo()
     #harris_subpixel_demo()
     #cv.destroyAllWindows()
