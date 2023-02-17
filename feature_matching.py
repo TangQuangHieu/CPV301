@@ -146,7 +146,6 @@ def flann_matches():
     cv.waitKey(0)
     cv.destroyAllWindows()
 
-
 def main():
     #sift_matching_demo()
     #orb_matching_demo()
