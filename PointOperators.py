@@ -160,11 +160,11 @@ def main():
 
     #sudoku = cv.imread("sudoku.jpg")
     #blendImages(messi,sudoku,0.5,True)
-    #gammaCorrection(messi,2.2,True)
+    gammaCorrection(messi,2.2,True)
     drawGammaCorrectionLine()
     gray = cv.cvtColor(messi, cv.COLOR_BGR2GRAY)
     #print(gray.shape)
-    over_expose = changeImageColor(gray,1,50,False) # img_new = alpha*img+beta
+    over_expose = changeImageColor(gray,1,90,False) # img_new = alpha*img+beta
     drawHistogram(over_expose, title="over expose")
     equal_hist = histogram_equalization(over_expose,False)
     drawHistogram(equal_hist,title="equalization")

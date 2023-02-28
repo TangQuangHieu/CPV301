@@ -85,6 +85,6 @@ def hough_lineP_transform_demo():
     # hough_lineP_transform_callback()
     cv.waitKey(0)
 def main():
-    #hough_line_transform_demo()
-    hough_lineP_transform_demo()
+    hough_line_transform_demo()
+    #hough_lineP_transform_demo()
 main()

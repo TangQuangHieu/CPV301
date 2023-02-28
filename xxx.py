@@ -1,14 +1,20 @@
-import socket
+import re
 
-mysock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-mysock.connect(('data.pr4e.org', 80))
-cmd = 'GET http://data.pr4e.org/intro-short.txt HTTP/1.0\r\n\r\n'.encode()
-mysock.send(cmd)
+#Create the file numbers.txt or anything you like and replace it
+#The file is already included in the repo
+#However your file may be different
 
-while True:
-    data = mysock.recv(512)
-    if len(data) < 1:
-        break
-    print(data.decode(),end='')
+file = open("numbers.txt")
 
-mysock.close()
+text = file.read()
+
+number_final = re.findall('[0-9]+',text)
+
+total = 0
+for i in number_final:
+    i = int(i)
+    total = total + i;
+
+print(total)
+
+file.close()
