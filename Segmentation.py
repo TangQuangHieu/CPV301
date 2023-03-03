@@ -191,7 +191,7 @@ def main():
     #waterShedDemo()
     #kMeanClusteringDemo()
     #meanShiftDemo()
-    camShiftDemo()
+    #camShiftDemo()
 
 main()
 
