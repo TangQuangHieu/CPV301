@@ -51,7 +51,7 @@ def display_video(path):
 
 #display_video("./stitching_video.mp4")
 def main():
-    cntFrame = display_video("./stitching_video2.mp4")
+    cntFrame = display_video("./stitching_video.mp4")
     modes = (cv.Stitcher_PANORAMA, cv.Stitcher_SCANS)
     # read input images
     idxs = np.linspace(0,cntFrame,50).astype('int')
